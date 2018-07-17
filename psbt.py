@@ -290,7 +290,7 @@ class PSBT_Role:
         '''Returns a binary representation of psbt in the form of a 
         file with .psbt extension.
         
-        Option argument of the desired file name (without extension)
+        Optional argument of the desired file name (without extension)
         '''
         extension = 'psbt'
         # Current idea: hex of double-sha256 of unsigned tx, first 8 characters + role name + 
@@ -554,7 +554,7 @@ class Signer(PSBT_Role):
         If the public key has been added to an input in the PSBT, the input index will be found
         '''
         # TODO: Add more ways to find an input that matches the provided public key
-        # If an input index 
+        # If an input index is not specified in arguments, find it based on matching public key
         if input_index == None:
             input_index = self._get_input_index(compressed_sec)
         # Note that the below assumes that the sighash type is only the last byte of sig. 

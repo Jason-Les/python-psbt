@@ -19,13 +19,13 @@ I have only tested this using python 3.6
 
 Download psbt.py and bitcoin\_lib.py and place together in desired directory. bitcoin\_lib.py is needed for parsing/serializing of transactions and scripts, as well as some other general functions.
 
-bitcoin\_lib is a library of basic bitcoin functions that was primarily written as part of @jimmysong's Programming Blockchain course and additionally augmented by parts of his pybtcfork claimer. I have made a few additions, mainly just for understanding of more script types. 
+bitcoin\_lib is a library of basic bitcoin functions that was primarily written as part of @jimmysong 's Programming Blockchain course and additionally augmented by parts of his pybtcfork claimer. I have made a few additions, mainly just for understanding of more script types. 
 
 ## Test Vectors
 
 Optionally, you can also download test\_psbt.py which contains all the test vectors here: https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki#Test_Vectors
 
-Note that this test vectors are not exhaustive.
+Note that these test vectors are not exhaustive.
 
 ## Use 
 
