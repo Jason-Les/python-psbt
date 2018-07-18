@@ -27,6 +27,8 @@ Optionally, you can also download test\_psbt.py which contains all the test vect
 
 Note that these test vectors are not exhaustive.
 
+If you want some help in understanding a serialized PSBT, I made this iterative color-coded breakdown of the different test vectors: https://docs.google.com/document/d/1BUTC3dh89kaxJbjUUD-nb8WLZ4SBvd15ZdgMlZrx0f4/edit
+
 ## Use 
 
 Instantiate either a Creator, Updater, Signer, Combiner, Input Finalizer or Transaction Extractor 
