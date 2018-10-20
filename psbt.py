@@ -743,9 +743,9 @@ class Input_Finalizer(PSBT_Role):
                             # More than one partial sig should not be found without a redeemScript or
                             # witnessScript. Must be missing a script
                             continue
-                            sec = k[1:]
-                            sig = i[k]
-                            found_sec = True
+                        sec = k[1:]
+                        sig = i[k]
+                        found_sec = True
                 # Take the SEC and sig and construct the scriptSig
                 # Add key-type PSBT_IN_FINAL_SCRIPTSIG to PSBT with the finalized scriptSig as its value 
                 i[PSBT_IN_FINAL_SCRIPTSIG] = Script([sig, sec]).serialize()
