@@ -383,7 +383,7 @@ class Creator(PSBT_Role):
         # Construct a serialized psbt manually
         new_psbt_serialized = MAGIC_BYTES + HEAD_SEPARATOR + psbt.serialize_map(key=PSBT_GLOBAL_UNSIGNED_TX, \
         value=serialized_tx)  + DATA_SEPARATOR + (DATA_SEPARATOR*len(self.tx_inputs)) + \
-        (DATA_SEPARATOR*len(self.tx_inputs))
+        (DATA_SEPARATOR*len(self.tx_outputs))
         # Create the psbt object using the serialized psbt
         self.psbt = psbt.parse(BytesIO(new_psbt_serialized))
 
